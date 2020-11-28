@@ -19,7 +19,7 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
 
-  ground = new Ground(windowWidth/2, windowHeight-10, windowWidth, 10);
+  ground = new Ground(windowWidth/2, 800-5, windowWidth, 10);
   wall1 = new Ground(0, windowHeight/2, 10, windowHeight);
   wall2 = new Ground(480, windowHeight/2, 10, windowHeight);
   
