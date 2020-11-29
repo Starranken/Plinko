@@ -4,7 +4,7 @@ class Plinko{
         isStatic: true
       }
         
-      this.body = Bodies.circle(x, y, r-5, options);
+      this.body = Bodies.circle(x, y, r, options);
       this.radius=r;
       World.add(world, this.body);
     }
@@ -13,6 +13,6 @@ class Plinko{
       var pos = this.body.position;
       rectMode(CENTER);
       fill("white");
-      ellipse(pos.x, pos.y, this.radius, this.radius);
+      ellipse(pos.x, pos.y, this.radius*2, this.radius*2);
     }
   };  
