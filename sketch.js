@@ -29,18 +29,18 @@ function setup() {
   }
 
   for(var j = 20; j<=480; j = j +60){
-    plinkos.push(new Plinko(j, 200, 15));
+    plinkos.push(new Plinko(j, 200, 10));
   }
   
   for(var j = 40; j<=480; j = j +60){
-    plinkos.push(new Plinko(j, 250, 15));
+    plinkos.push(new Plinko(j, 250, 10));
   }
 
   for(var j = 20; j<=480; j = j +60){
-    plinkos.push(new Plinko(j, 300, 15));
+    plinkos.push(new Plinko(j, 300, 10));
   }
 
-  particle1 =  new Particle(290, 100, 20);
+  particle1 =  new Particle(290, 100, 15);
 
   console.log(windowWidth);
 }
