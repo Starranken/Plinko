@@ -40,8 +40,6 @@ function setup() {
     plinkos.push(new Plinko(j, 300, 10));
   }
 
-  particle1 =  new Particle(290, 100, 15);
-
   console.log(windowWidth);
 }
 
@@ -50,7 +48,7 @@ function draw() {
   Engine.update(engine);
 
   if(frameCount % 60 === 0){
-    particles.push(new Particle(random(15, 465), 10, 20))
+    particles.push(new Particle(random(15, 465), 10, 15))
   }
 
   ground.display();
