@@ -5,7 +5,7 @@ class Particle{
         'restitution': 0.8
       }
         
-      this.body = Bodies.circle(x, y, r-5, options);
+      this.body = Bodies.circle(x, y, r, options);
       this.radius=r;
       this.color = color(random(0,255), random(0,255), random(0, 255));
       World.add(world, this.body);
@@ -15,6 +15,6 @@ class Particle{
       var pos = this.body.position;
       rectMode(CENTER);
       fill(this.color);
-      ellipse(pos.x, pos.y, this.radius+10, this.radius+10);
+      ellipse(pos.x, pos.y, this.radius*2, this.radius*2);
     }
   };
